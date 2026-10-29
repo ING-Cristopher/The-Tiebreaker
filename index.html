@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Tiebreaker · Toma de Decisiones y Análisis IA</title>
+    <meta name="description" content="Herramienta inteligente de resolución y análisis de decisiones: pros y contras ponderados, matriz comparativa y análisis DAFO con IA." />
+    <meta property="og:title" content="The Tiebreaker · Toma de Decisiones y Análisis IA" />
+    <meta property="og:description" content="Herramienta inteligente de resolución y análisis de decisiones: pros y contras ponderados, matriz comparativa y análisis DAFO con IA." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        // Prevent benign Vite WebSocket / HMR rejection from bubbling into error overlays
+        window.addEventListener('unhandledrejection', function(event) {
+          var reason = event && event.reason;
+          var msg = (reason && (reason.message || reason.toString())) || '';
+          if (msg.indexOf('WebSocket') !== -1 || msg.indexOf('websocket') !== -1 || msg.indexOf('closed without opened') !== -1) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+          }
+        });
+        window.addEventListener('error', function(event) {
+          var msg = (event && (event.message || '')) + '';
+          if (msg.indexOf('WebSocket') !== -1 || msg.indexOf('websocket') !== -1 || msg.indexOf('closed without opened') !== -1) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+          }
+        }, true);
+      })();
+    </script>
+  </head>
+  <body class="h-full bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+    <div id="root" class="h-full"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
